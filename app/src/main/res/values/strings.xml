@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MONTH_5_</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="zero">0</string>
+    <string name="add">+</string>
+    <string name="dic">-</string>
+</resources>
