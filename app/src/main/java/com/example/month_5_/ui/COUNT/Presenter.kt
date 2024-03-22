@@ -15,6 +15,7 @@ class Presenter (private var countView: CountView){
             countView.showToast("Поздравляю")
         }
         //T
+        //T
         model.inc()
         countView.showCount(model.count)
     }
