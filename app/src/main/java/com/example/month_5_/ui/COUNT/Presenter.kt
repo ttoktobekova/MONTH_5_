@@ -14,6 +14,7 @@ class Presenter (private var countView: CountView){
         if (model.count ==9){
             countView.showToast("Поздравляю")
         }
+        //T
         model.inc()
         countView.showCount(model.count)
     }
