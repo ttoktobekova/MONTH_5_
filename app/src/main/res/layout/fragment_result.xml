@@ -49,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:text="%"
         android:textAlignment="center"
+        android:text="@string/data"
         android:textColor="@color/pink"
         android:textSize="40sp" />
 

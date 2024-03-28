@@ -26,8 +26,6 @@
         android:textColorHint="@color/white"
         android:textSize="32sp" />
 
-
-
     <Button
         android:id="@+id/btn_history"
         android:layout_width="match_parent"

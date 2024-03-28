@@ -15,4 +15,6 @@
     <string name="request">Request</string>
     <string name="result">Result</string>
     <string name="up">Назад</string>
+
+    <string name="data">Data</string>
 </resources>

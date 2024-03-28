@@ -1,17 +1,12 @@
 package com.example.month_5_.LoveCalculator
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.setFragmentResult
-import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.fragment.findNavController
-import com.bumptech.glide.Glide
 import com.example.month_5_.R
 import com.example.month_5_.databinding.FragmentLoveCalculatorBinding
 import com.example.month_5_.model.LoveModel
@@ -21,7 +16,6 @@ import retrofit2.Response
 
 class LoveCalculatorFragment : Fragment(), LoveView {
     val presenter = PresenterLove(this)
-
     private lateinit var binding: FragmentLoveCalculatorBinding
 
     override fun onCreateView(
@@ -74,12 +68,6 @@ class LoveCalculatorFragment : Fragment(), LoveView {
                     })
             }
         }
-    }
-
-
-
-    override fun showResult(loveModel: LoveModel) {
-
     }
 }
 
