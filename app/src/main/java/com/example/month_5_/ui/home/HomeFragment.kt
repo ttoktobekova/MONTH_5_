@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.month_5_.Injector.Injector
 import com.example.month_5_.R
@@ -31,7 +32,6 @@ class HomeFragment : Fragment(), CountView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initClickers()
-
     }
 
     private fun initClickers() {
@@ -43,6 +43,7 @@ class HomeFragment : Fragment(), CountView {
             btnDic.setOnClickListener {
                 presenter.decrement()
             }
+
         }
     }
 
