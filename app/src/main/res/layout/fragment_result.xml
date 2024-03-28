@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:textAlignment="center"
-        android:text="@string/data"
+        android:text="%"
         android:textColor="@color/pink"
         android:textSize="40sp" />
 
@@ -61,7 +61,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/pink"
         android:text="@string/up"
-        android:textSize="40sp"
+        android:textSize="44sp"
         android:textStyle="bold" />
 
 
