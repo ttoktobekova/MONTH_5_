@@ -18,4 +18,7 @@
     <string name="gallery">Gallery</string>
     <string name="photo">Photo</string>
     <string name="rrr">Request</string>
+    <string name="argument">Argument</string>
+    <string name="argument2">Argument2</string>
+    <string name="to_finish">Переход на вторую страницу</string>
 </resources>

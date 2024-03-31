@@ -35,5 +35,10 @@
         android:name="com.example.month_5_.image.ImageFragment"
         android:label="fragment_image"
         tools:layout="@layout/fragment_image" />
+    <fragment
+        android:id="@+id/resultIMGFragment"
+        android:name="com.example.month_5_.image.ResultIMGFragment"
+        android:label="fragment_result_i_m_g"
+        tools:layout="@layout/fragment_result_i_m_g" />
 
 </navigation>

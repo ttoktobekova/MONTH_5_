@@ -5,8 +5,9 @@
 
     <ImageView
         android:id="@+id/img_view"
-        android:layout_width="240dp"
+        android:layout_width="match_parent"
         android:layout_height="240dp"
+        android:scaleType="fitXY"
         android:src="@color/pink" />
 
 
