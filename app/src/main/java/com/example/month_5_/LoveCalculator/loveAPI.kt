@@ -1,7 +1,7 @@
 package com.example.month_5_.LoveCalculator
 
 import com.example.month_5_.model.LoveModel
-import com.example.month_5_.ui.COUNT.Presenter
+import com.example.month_5_.COUNT.Presenter
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query

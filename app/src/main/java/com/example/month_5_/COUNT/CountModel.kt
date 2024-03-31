@@ -1,4 +1,4 @@
-package com.example.month_5_.ui.COUNT
+package com.example.month_5_.COUNT
 
 class CountModel {
     var count = 0

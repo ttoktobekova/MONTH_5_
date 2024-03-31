@@ -55,8 +55,7 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
-    //Glide
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-
+    //Coil
+    implementation ("io.coil-kt:coil:2.6.0") // новая ветка разработки
 
 }

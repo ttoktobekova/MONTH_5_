@@ -58,7 +58,7 @@
         android:id="@+id/btn_try_again"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/pink"
         android:text="@string/up"
         android:textSize="44sp"

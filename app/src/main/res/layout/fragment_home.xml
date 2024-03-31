@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/img_bg"
     android:orientation="vertical"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".COUNT.HomeFragment">
 
     <TextView
         android:id="@+id/tv_view"

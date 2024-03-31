@@ -1,4 +1,4 @@
-package com.example.month_5_.ui.home
+package com.example.month_5_.COUNT
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import com.example.month_5_.Injector.Injector
 import com.example.month_5_.R
 import com.example.month_5_.databinding.FragmentHomeBinding
-import com.example.month_5_.ui.COUNT.CountView
+import com.example.month_5_.COUNT.CountView
 
 class HomeFragment : Fragment(), CountView {
     private var _binding: FragmentHomeBinding? = null

@@ -1,8 +1,8 @@
 package com.example.month_5_.Injector
 
-import com.example.month_5_.ui.COUNT.CountModel
-import com.example.month_5_.ui.COUNT.CountView
-import com.example.month_5_.ui.COUNT.Presenter
+import com.example.month_5_.COUNT.CountModel
+import com.example.month_5_.COUNT.CountView
+import com.example.month_5_.COUNT.Presenter
 
 class Injector {
     companion object{

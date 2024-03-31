@@ -1,4 +1,4 @@
-package com.example.month_5_.ui.COUNT
+package com.example.month_5_.COUNT
 
 import com.example.month_5_.Injector.Injector
 import com.example.month_5_.R
