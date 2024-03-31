@@ -1,4 +1,4 @@
-package com.example.month_5_.image
+package com.example.month_5_.image.model
 
 import java.io.Serializable
 

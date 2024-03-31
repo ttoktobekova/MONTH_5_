@@ -1,5 +1,6 @@
 package com.example.month_5_.image
 
+import com.example.month_5_.image.model.PixaModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

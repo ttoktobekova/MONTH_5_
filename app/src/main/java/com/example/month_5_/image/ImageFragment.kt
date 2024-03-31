@@ -1,15 +1,17 @@
 package com.example.month_5_.image
 
 import android.annotation.SuppressLint
+import android.nfc.tech.MifareUltralight.PAGE_SIZE
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.setFragmentResult
-import coil.util.CoilUtils.result
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.month_5_.databinding.FragmentImageBinding
+import com.example.month_5_.image.model.PixaModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -36,6 +38,7 @@ class ImageFragment : Fragment() {
         initClicker()
     }
 
+
     private fun initClicker() {
         binding.btnRequest.setOnClickListener {
             oldWord = binding.photoEt.text.toString()
@@ -46,6 +49,8 @@ class ImageFragment : Fragment() {
                 ++page
                 requestByImage(oldWord)
             }
+            requestByImage(binding.photoEt.text.toString())
+
         }
     }
 
