@@ -1,5 +1,6 @@
 package com.example.month_5_.image
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
@@ -12,6 +13,7 @@ class PixaAdapter(
     var list: ArrayList<ImageModel>
 ) : Adapter<PixaAdapter.PixaViewHolder>() {
 
+    @SuppressLint("NotifyDataSetChanged")
     fun addList(listImage: ArrayList<ImageModel>) {
         list.clear()
         list.addAll(listImage)

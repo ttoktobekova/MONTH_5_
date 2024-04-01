@@ -25,16 +25,31 @@ class ImageFragment : Fragment() {
     var newWord = ""
     var page = 1
 
+    override fun onCreateView(
+
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentImageBinding.inflate(layoutInflater)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        addScrollListener()
+        initAdapter()
+        initClicker()
+    }
 
     private fun addScrollListener() {
         binding.rvPhoto.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+
                 super.onScrolled(recyclerView, dx, dy)
                 val layoutManager = binding.rvPhoto.layoutManager as LinearLayoutManager
                 val visibleImage = layoutManager.childCount
                 val totalCount = layoutManager.itemCount
                 val firstImage = layoutManager.findFirstVisibleItemPosition()
-
 
                 if ((visibleImage + firstImage) >= totalCount && firstImage >= 0
                     && totalCount >= PAGE_SIZE
@@ -61,25 +76,8 @@ class ImageFragment : Fragment() {
             }
 
             override fun onFailure(p0: Call<PixaModel>, p1: Throwable) {
-                TODO("Not yet implemented")
             }
-
         })
-    }
-
-    override fun onCreateView(
-
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentImageBinding.inflate(layoutInflater)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initAdapter()
-        initClicker()
     }
 
 
@@ -88,7 +86,7 @@ class ImageFragment : Fragment() {
             oldWord = binding.photoEt.text.toString()
             newWord = binding.photoEt.text.toString()
             if (oldWord != newWord) {
-                requestByImage(newWord)
+                ++page
             } else {
                 ++page
                 requestByImage(oldWord)
@@ -98,7 +96,6 @@ class ImageFragment : Fragment() {
         }
 
     }
-
 
     private fun requestByImage(searchWord: String) {
         RetrofitServiceGallery.api.getImages(searchWord = searchWord, page = page)
@@ -127,6 +124,4 @@ class ImageFragment : Fragment() {
     private fun initAdapter() {
         binding.rvPhoto.adapter = adapter
     }
-
-
 }
