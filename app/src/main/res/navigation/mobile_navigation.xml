@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/imageFragment">
+    app:startDestination="@+id/countMVVMFragment2">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -40,5 +40,16 @@
         android:name="com.example.month_5_.image.ResultIMGFragment"
         android:label="fragment_result_i_m_g"
         tools:layout="@layout/fragment_result_i_m_g" />
+    <fragment
+        android:id="@+id/mutableFragment"
+        android:name="com.example.month_5_.MVVM.MutableFragment"
+        android:label="fragment_mutable"
+        tools:layout="@layout/fragment_mutable" />
+    <fragment
+        android:id="@+id/countMVVMFragment2"
+        android:name="com.example.month_5_.MVVM.CountMVVMFragment"
+        android:label="fragment_count_m_v_v_m"
+        tools:layout="@layout/fragment_count_m_v_v_m" />
+
 
 </navigation>

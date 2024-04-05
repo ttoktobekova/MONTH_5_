@@ -21,4 +21,7 @@
     <string name="argument">Argument</string>
     <string name="argument2">Argument2</string>
     <string name="to_finish">Переход на вторую страницу</string>
+    <string name="history">History</string>
+    <string name="result1">Result</string>
+    <string name="mvvm">MVVM</string>
 </resources>

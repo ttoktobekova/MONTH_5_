@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_lovee"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".LoveCalculator.LoveCalculatorFragment">
+
+    <TextView
+        android:textSize="32sp"
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result1" />
+
+
+    <EditText
+        android:id="@+id/et_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first"
+        android:textColorHint="@color/white"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/et_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/second"
+        android:textColorHint="@color/white"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btn_requer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:text="@string/result"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:text="@string/history"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</LinearLayout>

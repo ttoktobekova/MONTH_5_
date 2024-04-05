@@ -6,13 +6,18 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
 
-
     <item
         android:id="@+id/loveCalculatorFragment"
         android:icon="@drawable/ic_calculator"
         android:title="@string/calculator" />
+
     <item
         android:id="@+id/imageFragment"
         android:icon="@drawable/ic_img"
         android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/countMVVMFragment"
+        android:icon="@drawable/ic_mvvm"
+        android:title="@string/mvvm" />
 </menu>
